@@ -1,4 +1,7 @@
 package software.ulpgc.kata4.io;
 
-public interface MovieWriter {
+import software.ulpgc.kata4.model.Movie;
+
+public interface MovieWriter extends AutoCloseable {
+    void writer(Movie movie);
 }
